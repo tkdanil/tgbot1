@@ -1,8 +1,7 @@
 #start bo
-pip install python-telegram-bot python-dotenv
 import asyncio
-from aiogram import Bot, Dispatcher, types
-from aiogram.filters import Command
+from aiogram import Bot, Dispatcher, types 
+from aiogram.filters import Command 
 
 #токен бота
 API_TOKEN ="7399928399:AAGVW6kBllbTUDSjfA4uPW1GI1qF2EXraM0"
@@ -16,7 +15,7 @@ dp = Dispatcher()
 #Обработчик команды /start
 @dp.message (Command(commands=["start"]))
 async def process_start_command(message: types.Message):
-    await nessage.answer ("HELLO!")
+    await message.answer ("HELLO!")
 
 
 #Обработчик текстовых сообщений
