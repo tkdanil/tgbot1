@@ -1,1 +1,1 @@
-#start bot
+#start bo
